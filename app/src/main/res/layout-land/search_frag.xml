@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aandroid="http://schemas.android.com/tools">
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#fff9ffef">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:background="#fff9ffef">
+
+            <LinearLayout
+
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:id="@+id/layout_swicth"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp">
+
+
+                <android.support.v7.widget.SwitchCompat
+
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchTypeSwitch"
+                    android:textOn="@string/nearMe"
+                    android:textOff="@string/byText"
+                    android:checked="true"
+                    android:layout_gravity="center_horizontal" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:id="@+id/layout_searchNearMe"
+
+                android:visibility="visible"
+                android:layout_margin="12dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="26dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:id="@+id/radius_txt"
+                        android:layout_weight="2"
+                        android:layout_marginTop="8dp" />
+
+                    <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radius"
+                        android:max="5000"
+                        android:indeterminate="false"
+                        android:progress="10"
+                        android:layout_marginTop="8dp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3">
+
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:id="@+id/spinner"
+                            android:spinnerMode="dialog"
+                            android:touchscreenBlocksFocus="false"
+                            android:transitionGroup="true"
+                            android:theme="@style/Base.TextAppearance.AppCompat.Body2"
+                            android:layout_marginTop="8dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layout_searchByText"
+                android:layout_margin="12dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:hint="@string/whatDoYouWant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/searchByText_editText"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="8dp">
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                android:id="@+id/pull_refresh_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="1dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#19000000"
+                android:dividerHeight="4dp"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:smoothScrollbar="true" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <!--the drawer content-->
+
+    </LinearLayout>
+
+    <com.software.shell.fab.ActionButton
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="48dp"
+        fab:type="DEFAULT"
+        fab:button_color="@color/fab_material_light_blue_500"
+        fab:button_colorPressed="@color/fab_material_lime_900"
+        fab:image="@drawable/ic_search_black_48dp"
+        fab:image_size="24dp"
+        fab:shadow_color="#757575"
+        fab:shadow_radius="1.0dp"
+        fab:shadow_xOffset="1.5dp"
+        fab:shadow_yOffset="1.0dp"
+        fab:stroke_color="@color/fab_material_blue_grey_500"
+        fab:stroke_width="1.0dp"
+        fab:show_animation="@anim/fab_roll_from_down"
+        fab:hide_animation="@anim/fab_roll_to_down" />
+</FrameLayout>

@@ -1,0 +1,53 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <!--<item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:showAsAction="never"
+       >
+        <menu>
+            <item
+                android:id="@+id/setting_language"
+                android:title="@string/language"
+                android:icon="@drawable/language_icon">
+                <menu>
+                   <item
+                       android:id="@+id/language_heb"
+                       android:title="@string/hebrew"
+                       ></item>
+                    <item
+                        android:id="@+id/language_en"
+                        android:title="@string/english"
+                        ></item>
+                </menu>
+                </item>
+            <item
+                android:id="@+id/setting_measure"
+                android:title="@string/measure"
+                android:icon="@drawable/measuring"></item>
+            <item
+                android:id="@+id/setting_favorites"
+                android:title="@string/setting_favorites"
+                >
+                <menu>
+                    <item
+                        android:id="@+id/show_favorites"
+                        android:title="@string/showFavorite">
+
+                        </item>
+                    <item
+                        android:id="@+id/delete_favorites"
+                        android:title="@string/deleteFavories">
+
+                        </item>
+                </menu>
+                </item>
+        </menu>
+
+       </item>
+-->
+
+</menu>

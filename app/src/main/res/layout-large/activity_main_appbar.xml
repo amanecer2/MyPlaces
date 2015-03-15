@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/layout_toolBar"
+        layout="@layout/tool_bar"></include>
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--the main content of the activity!-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:layout_weight="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/search_frag_inBigDEvice"
+                class="com.amanecer.myplaces.fragments.Search_frag"
+                 />
+            <!--android:name="com.amanecer.myplaces.fragments.Search_frag"
+                tools:layout="@layout/search_frag"-->
+
+
+            <FrameLayout
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:id="@+id/theMap"
+                /><!---->
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+        <!--the drawer content-->
+        <fragment
+            android:id="@+id/navigation_frag"
+            android:name="com.amanecer.myplaces.fragments.Navigation_fragment"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:layout="@layout/navigation_gragment"
+            tools:layout="@layout/navigation_gragment"></fragment>
+            </android.support.v4.widget.DrawerLayout>
+
+
+
+
+</LinearLayout>

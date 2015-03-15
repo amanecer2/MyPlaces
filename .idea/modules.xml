@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyPlaces.iml" filepath="$PROJECT_DIR$/MyPlaces.iml" />
+      <module fileurl="file://$PROJECT_DIR$/actionbardrawer/actionbardrawer.iml" filepath="$PROJECT_DIR$/actionbardrawer/actionbardrawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltorefrshcursor/pulltorefrshcursor.iml" filepath="$PROJECT_DIR$/pulltorefrshcursor/pulltorefrshcursor.iml" />
+    </modules>
+  </component>
+</project>
+
