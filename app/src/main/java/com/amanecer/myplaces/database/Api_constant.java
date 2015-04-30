@@ -9,7 +9,7 @@ public class Api_constant {
     public static final String googleDirectionOriging = "https://maps.googleapis.com/maps/api/directions/json?origin=";
     public static final String getGoogleDirectionDestanation = "&destination=";
    // https://maps.googleapis.com/maps/api/place/autocomplete/json?input=re&types=geocode&language=iw&key=&key=AIzaSyDjgWw1Nma3dDMw49m5upMKaEN3WvPrdUM
-    public static final String key = "&key=AIzaSyDjgWw1Nma3dDMw49m5upMKaEN3WvPrdUM";
+    public static final String key = "*************"; // use your own key;
     public static final String googleSearchByTexh = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=";
     public static final String googleSearchNearMyPlace = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?";
     public static final String google = "https://maps.googleapis.com/maps/api/place/";
